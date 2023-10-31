@@ -1,0 +1,31 @@
+[workspace]
+members = ["macro"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+description = "Tests that depend on other tests"
+authors = ["outfoxxed <outfoxxed@outfoxxed.me>"]
+
+[workspace.dependencies]
+proc-macro2 = "^1"
+quote = "^1"
+syn = { version = "^2", features = ["full"] }
+
+[package]
+name = "flowtest"
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+authors.workspace = true
+readme = "README.md"
+license = "Apache-2.0 or MIT"
+repository = "https://github.com/outfoxxed/flowtest"
+documentation = "https://docs.rs/flowtest"
+categories = ["development-tools::testing"]
+keywords = ["testing", "test", "dependency", "dependent", "unit"]
+exclude = ["shell.nix", ".editorconfig", ".rustfmt.toml", ".gitignore"]
+
+[dependencies]
+flowtest-macro = { version = "= 0.1.0", path = "macro" }

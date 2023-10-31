@@ -1,0 +1,19 @@
+[package]
+name = "flowtest-macro"
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+authors.workspace = true
+license = "Apache-2.0 or Mit"
+repository = "https://github.com/outfoxxed/flowtest"
+documentation = "https://docs.rs/flowtest"
+categories = ["development-tools::testing"]
+keywords = ["testing", "test", "dependency", "dependent", "unit"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2.workspace = true
+quote.workspace = true
+syn.workspace = true

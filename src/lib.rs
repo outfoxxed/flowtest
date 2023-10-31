@@ -37,7 +37,7 @@
 //!     if false {
 //!         panic!("oh no!")
 //!     } else {
-//!         Ok(value + 5)
+//!         value + 5
 //!     }
 //! }
 //!

@@ -31,7 +31,7 @@ fn mutate_complex_type_differently() -> i32 {
     if false {
         panic!("oh no!")
     } else {
-        Ok(value + 5)
+        value + 5
     }
 }
 
